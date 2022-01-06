@@ -2,10 +2,43 @@ body{
     background-color: #19191B;
 }
 
+/* Background Gradient Color */
+.header-bg-colors{
+    position: absolute;
+    width: 309.94px;
+    height: 818.86px;
+    left: 285px;
+    top: 0px;
+    background: linear-gradient(
+180deg, rgba(84, 84, 212, 0.50) 0%, rgba(84, 84, 212, 0.1134) 100%);
+    filter: blur(199.107px);
+    border-radius: 154.972px;
+    transform: rotate(
+-54.37deg);
+}
+
+.header-bg-colors::before{
+    content: "";
+    position: absolute;
+    width: 309.94px;
+    height: 828.7px;
+    left: 445px;
+    top: 832px;
+    background: linear-gradient(rgba(251, 168, 28, 0.30) 0%, rgba(224, 86, 136, 0.063) 100%);
+    filter: blur(199.107px);
+    border-radius: 154.972px;
+    transform: rotate(
+286deg);
+}
+
 /* Navbar CSS */
 .navbar{
-    background-color: #19191B !important;
     padding-top: 27px;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    
 }
 
 .navbar a{
@@ -299,6 +332,35 @@ transform: rotate(45deg);
 
 /* Service Section */
 
+.service-section-bg-colors{
+    position: absolute;
+    width: 309.94px;
+    height: 337.48px;
+    left: 223px;
+    top: 1730px;
+    background: linear-gradient(
+180deg, rgba(84, 84, 212, 3.21) 0%, rgba(84, 84, 212, 0.0882) 100%);
+    filter: blur(199.107px);
+    border-radius: 154.972px;
+    transform: rotate(
+-54.37deg);
+}
+
+.service-section-bg-colors::before{
+    content: "";
+    position: absolute;
+    width: 570.77px;
+    height: 1067px;
+    left: -110px;
+    top: 408px;
+    background: linear-gradient( 
+180deg, rgba(251, 168, 28, 0.078) 0%, rgba(224, 86, 136, 0.078) 100%);
+    filter: blur(199.107px);
+    border-radius: 154.972px;
+    transform: rotate( 
+117deg);
+}
+
 .services-section{
     position: relative;
     margin-bottom: 200px;
@@ -491,6 +553,20 @@ transform: rotate(45deg);
 
 
 /* Our Portfolio Section */
+
+.our-portfolio-bg-colors{
+    position: absolute;
+    width: 397.93px;
+    height: 433.29px;
+    left: 1300px;
+    top: 2600px;
+    background: linear-gradient( 
+180deg, rgba(84, 84, 212, 1.2) 0%, rgba(84, 84, 212, 0.084) 100%);
+    filter: blur(199.107px);
+    filter: blur(199.107px);
+    border-radius: 154.972px;
+    transform: matrix(-0.58, -0.81, -0.81, 0.58, 0, 0);
+}
 
 .portfolio-section{
     position: relative;
@@ -726,6 +802,47 @@ transform: rotate(45deg);
 @media screen and (max-width: 768px) {
     
 
+    .header-bg-colors{
+        height:150px;
+        width:150px;
+        top:0;
+        left:0;
+    }
+
+    .header-bg-colors::before{
+        content: '';
+        width: 150px;
+        height: 150px;
+        top:0;
+        left:0;
+    }
+
+    .service-section-bg-colors{
+        height:150px;
+        width:150px;
+        top:0;
+        left:0;
+    }
+
+    .service-section-bg-colors::before{
+        content: '';
+        width: 150px;
+        height: 150px;
+        border-radius: 150px;
+        position: absolute;
+        border: 3px solid #fff;
+        opacity: 0.5;
+        left: -15px;
+        top: -15px;
+    }
+
+    .our-portfolio-bg-colors{
+        height:150px;
+        width:150px;
+        top:0;
+        left:0;
+    }
+
     .navbar-button{
         padding: 10px 20px;
     }
@@ -891,5 +1008,7 @@ transform: rotate(45deg);
         top: 189px;
         left: 5px;
     }
+
+
 
 }
